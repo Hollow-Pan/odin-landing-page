@@ -28,6 +28,8 @@ a {
 }
 
 .header-container {
+    max-width: 1000px;
+    margin: 0 auto;
     padding-bottom: 2rem;
     display: flex;
     justify-content: space-between;
@@ -47,6 +49,8 @@ a {
 }
 
 .about-container {
+    max-width: 1000px;
+    margin: 0 auto;
     display:flex;
     justify-content: space-between;
     align-items: flex-start;
@@ -82,12 +86,18 @@ a {
 .about-button {
     background-color: #3882F6;
     color: white;
-    padding: 0.5rem 1.2rem;
+    padding: 0.5rem 0.8rem;
     border: none;
     border-radius: 0.375rem;
     cursor: pointer;
     font-size: 1rem;
     font-weight: 500;
+}
+
+.about-container img {
+    width: 450px;
+    height:300px;
+    object-fit: cover;
 }
 
 .example-container {
@@ -111,6 +121,12 @@ a {
     gap: 8px;
 }
 
+.images-container img {
+    width: 200px;
+    height: 250px;
+    object-fit: cover;
+}
+
 .one, .two, .three, .four {
     border: 3px solid #3882F6;
 }
@@ -122,7 +138,9 @@ a {
     padding: 2rem;
     display:flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
+
+    gap: 12px;
 }
 
 .quote-text {
@@ -132,7 +150,7 @@ a {
 }
 
 .quote-author {
-    /* text-align: right; */
+    text-align: right;
     font-size:24px;
     font-weight:bold;
     /* border: 8px solid blue; */
